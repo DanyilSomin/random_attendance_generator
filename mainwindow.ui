@@ -1,0 +1,5834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>721</width>
+    <height>328</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>721</width>
+    <height>328</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>721</width>
+    <height>328</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="homeWidget">
+   <property name="minimumSize">
+    <size>
+     <width>721</width>
+     <height>328</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>722</width>
+     <height>329</height>
+    </size>
+   </property>
+   <widget class="QTabWidget" name="mainWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>721</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>721</width>
+      <height>331</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>721</width>
+      <height>331</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="mainTab">
+     <attribute name="title">
+      <string>Головна</string>
+     </attribute>
+     <widget class="QPushButton" name="exitBtn">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>270</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Вихід</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="calculateBtn">
+      <property name="geometry">
+       <rect>
+        <x>99</x>
+        <y>270</y>
+        <width>191</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Сгенерувати та обчислити</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="seasonTypeGroupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>71</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Сезон</string>
+      </property>
+      <widget class="QRadioButton" name="winterRadioBtn">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>51</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Зима</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="springRadioBtn">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>51</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Весна</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="summerRadioBtn">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>51</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Літо</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="autumnRadioBtn">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>51</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Осінь</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="dayTypeGroupBox">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>0</y>
+        <width>71</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Тип дня</string>
+      </property>
+      <widget class="QRadioButton" name="weekdayRadioBtn">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>61</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Будні</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="weekendRadioBtn">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>61</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Вихідні</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="holidayRadioBtn">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>61</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Свята</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="ammissionGroupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>281</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Прибуток</string>
+      </property>
+      <widget class="QSpinBox" name="admissionSumSpinBox">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>20</y>
+         <width>91</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="suffix">
+        <string> грн.</string>
+       </property>
+       <property name="maximum">
+        <number>9999999</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="excursionServicesSpinBox">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>50</y>
+         <width>91</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="suffix">
+        <string> грн.</string>
+       </property>
+       <property name="maximum">
+        <number>9999999</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="admissionSumLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>171</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Сума вхідної плати:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <property name="indent">
+        <number>-1</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="finalEarningsLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>171</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Загальний прибуток:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <property name="indent">
+        <number>-1</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="excursionServicesLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>171</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Екскурсійні послуги:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <property name="indent">
+        <number>-1</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="finalEarningsSpinBox">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>110</y>
+         <width>91</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(120, 255, 120)</string>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="suffix">
+        <string> грн.</string>
+       </property>
+       <property name="maximum">
+        <number>9999999</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="anotherServicesSpinBox">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>80</y>
+         <width>91</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="suffix">
+        <string> грн.</string>
+       </property>
+       <property name="maximum">
+        <number>9999999</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="anotherServicesLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>171</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Інші послуги:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <property name="indent">
+        <number>-1</number>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="generatorTypeGroupBox">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>0</y>
+        <width>120</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Розподіл чисел у ГВЧ</string>
+      </property>
+      <widget class="QRadioButton" name="normalTypeRadioButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>111</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Нормальний</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="linearTypeRadioButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>84</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Лінійний</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="chartTypeGroupBox">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>60</y>
+        <width>120</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Тип графіку</string>
+      </property>
+      <widget class="QRadioButton" name="enteranceRadioButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>111</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Відвідуваємість</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="admissionRadioButton">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>20</y>
+         <width>111</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Прибуток</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="geometry">
+       <rect>
+        <x>299</x>
+        <y>-1</y>
+        <width>421</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="admissionChartPage">
+       <widget class="QChartView" name="admissionChartGraphicsView">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>411</width>
+          <height>291</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="enternceChartPage">
+       <widget class="QChartView" name="enteranceChartGraphicsView">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>411</width>
+          <height>291</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="enterDataTab">
+     <attribute name="title">
+      <string>Ввід даних</string>
+     </attribute>
+     <widget class="QStackedWidget" name="dataEnterStackedWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>711</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="enterAdmissionPage">
+       <widget class="QLabel" name="adlutLabel">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Дорослі:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToEnterAdultWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>67</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToEnterAdultWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>4</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToEnterAdultWeekendsSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>4</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="winterLabel">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>0</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Зима</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="springLabel">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>0</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Весна</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_4">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToEnterAdultHolidaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>5</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToEnterAdultSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>6</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToEnterAdultSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>120</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_4">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="summerLabel">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>0</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Літо</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_7">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToEnterAdultSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>18</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToEnterAdultSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>370</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_7">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_10">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToEnterAdultAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>6</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToEnterAdultAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>122</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="autumnLabel">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>0</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Осінь</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_10">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToEnterAdultWeekdaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>2</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToEnterChildHolidaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_5">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_8">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToEnterChildWeekendsSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>2</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToEnterChildWeekdaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>1</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_11">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_8">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="childrenLabel">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Діти:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToEnterChildSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>28</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToEnterChildAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>28</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToEnterChildWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>21</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToEnterChildSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>73</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_5">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToEnterChildAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>177</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_11">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToEnterChildSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>488</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToEnterChildSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>217</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToEnterChildWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>125</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToEnterBenWeekdaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>1</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToEnterBenSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>14</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToEnterBenSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>6</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_6">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_9">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToEnterBenWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToEnterBenSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>70</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToEnterBenSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>28</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_12">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToEnterBenWeekendsSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>1</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToEnterBenAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>30</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_6">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToEnterBenWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>16</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToEnterBenHolidaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>2</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToEnterBenAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>6</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="beneficiariesLabel">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>170</y>
+          <width>61</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Пільгові:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_9">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_12">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="priceLabel">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>0</y>
+          <width>151</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ціна</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="holidayLabel">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Свята:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekdaysLabel">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Будні:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekendLabel">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Вихідні:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekdaysLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Будні:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="holidayLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Свята:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekendLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Вихідні:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekdaysLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Будні:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="holidayLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Свята:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekendLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Вихідні:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="attendanceCoefLabel_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>200</y>
+          <width>691</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Коефіцієнт відвідуваємості:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="holidayLabel_4">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>220</y>
+          <width>51</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Свята:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekdaysLabel_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>220</y>
+          <width>51</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Будні:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekendLabel_4">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>220</y>
+          <width>51</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Вихідні:</string>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="attendanceWeekdayCoefDoubleSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>220</y>
+          <width>81</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="value">
+         <double>1.000000000000000</double>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="attendanceWeekendCoefDoubleSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>220</y>
+          <width>81</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="value">
+         <double>4.000000000000000</double>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="attendanceHolidayCoefDoubleSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>220</y>
+          <width>81</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="value">
+         <double>6.500000000000000</double>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="excursionAdmissionPage">
+       <widget class="QLabel" name="epsLabel_13">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_14">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_13">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_15">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToExcursionBenWeekendsSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>4</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToExcursionChildAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>4</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_14">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToExcursionBenWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>2</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToExcursionBenWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>14</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToExcursionAdultAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>76</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="springLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>0</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Весна</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_16">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToExcursionBenSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>2</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToExcursionAdultWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>5</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_17">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToExcursionBenHolidaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>6</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_15">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_16">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToExcursionChildSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToExcursionAdultWeekdaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>12</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToExcursionBenSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>18</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_18">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToExcursionAdultSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>86</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToExcursionChildWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>26</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_17">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToExcursionChildSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>32</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="beneficiariesLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>170</y>
+          <width>61</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Пільгові:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_18">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_19">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToExcursionAdultSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>62</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToExcursionBenWeekdaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>2</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_20">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToExcursionBenSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToExcursionChildWeekdaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>6</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToExcursionAdultSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>7</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToExcursionBenAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>2</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="adlutLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Дорослі:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="childrenLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Діти:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToExcursionBenSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>26</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_21">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToExcursionChildWeekendsSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_19">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_20">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_21">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToExcursionChildAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>38</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToExcursionChildWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_22">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="winterLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>0</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Зима</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_22">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_23">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="autumnLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>0</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Осінь</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToExcursionBenAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>22</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToExcursionChildSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>4</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToExcursionAdultAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>7</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToExcursionAdultHolidaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>24</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="summerLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>0</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Літо</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToExcursionChildSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>44</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToExcursionChildHolidaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>12</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_23">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToExcursionAdultSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>8</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToExcursionAdultWeekendsSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>20</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_24">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToExcursionAdultWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>50</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_24">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekendLabel_5">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Вихідні:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekendLabel_6">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Вихідні:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="holidayLabel_5">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Свята:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekdaysLabel_5">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Будні:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="holidayLabel_6">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Свята:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekdaysLabel_6">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Будні:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="holidayLabel_7">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Свята:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekdaysLabel_7">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Будні:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="priceLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>0</y>
+          <width>151</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ціна</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekendLabel_7">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Вихідні:</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="photographyPage">
+       <widget class="QLabel" name="weekdaysLabel_8">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Будні:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_25">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToTakePhotoAdultSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>40</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToTakePhotoBenAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>6</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_25">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_26">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToTakePhotoAdultAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>39</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToTakePhotoChildWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>7</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_26">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToTakePhotoAdultSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>18</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToTakePhotoAdultWeekdaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="autumnLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>0</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Осінь</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="holidayLabel_8">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Свята:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToTakePhotoBenSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>25</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="springLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>0</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Весна</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToTakePhotoBenWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>5</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToTakePhotoChildWeekdaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>1</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="holidayLabel_9">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Свята:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToTakePhotoBenWeekendsSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>1</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToTakePhotoChildHolidaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_27">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_27">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_28">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_29">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="holidayLabel_10">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Свята:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToTakePhotoAdultSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>4</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="adlutLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Дорослі:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToTakePhotoChildAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>13</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_30">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToTakePhotoBenSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>6</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_28">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_31">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="childrenLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Діти:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_29">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToTakePhotoBenAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_30">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="winterLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>0</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Зима</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToTakePhotoAdultWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>22</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekdaysLabel_10">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Будні:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToTakePhotoChildSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>28</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToTakePhotoBenSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>14</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="beneficiariesLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>170</y>
+          <width>61</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Пільгові:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToTakePhotoChildWeekendsSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>2</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekendLabel_8">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Вихідні:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_32">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="summerLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>0</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Літо</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToTakePhotoAdultAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>6</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToTakePhotoChildSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>150</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekendLabel_9">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Вихідні:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToTakePhotoAdultHolidaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>8</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToTakePhotoBenHolidaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>2</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_31">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekdaysLabel_11">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Будні:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToTakePhotoAdultWeekendsSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>5</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_32">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToTakePhotoBenSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekendLabel_11">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Вихідні:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_33">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToTakePhotoAdultWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>4</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_33">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_34">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToTakePhotoChildAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>40</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_34">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToTakePhotoAdultSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>120</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="priceLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>0</y>
+          <width>151</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ціна</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_35">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToTakePhotoBenWeekdaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>1</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_36">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToTakePhotoChildSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>83</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToTakePhotoChildSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>73</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_35">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToTakePhotoChildWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>41</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToTakePhotoBenWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>2</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_36">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="horseRidingPage">
+       <widget class="QSpinBox" name="amountToHorseRidingBenSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>4</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekdaysLabel_12">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Будні:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToHorseRidingChildSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>34</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_37">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="holidayLabel_11">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Свята:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekendLabel_10">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Вихідні:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_37">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToHorseRidingAdultAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToHorseRidingAdultWeekdaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>20</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="adlutLabel_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Дорослі:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToHorseRidingBenWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>1</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="holidayLabel_12">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Свята:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToHorseRidingChildSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>6</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_38">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToHorseRidingChildAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>12</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_38">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_39">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_40">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_39">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_40">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_41">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekendLabel_12">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Вихідні:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="holidayLabel_13">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Свята:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_41">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToHorseRidingBenWeekdaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToHorseRidingBenWeekendsSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>15</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToHorseRidingAdultSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>7</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_42">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToHorseRidingChildSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>20</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToHorseRidingAdultWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_43">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToHorseRidingChildSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>5</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToHorseRidingChildWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>4</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_44">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToHorseRidingBenAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="childrenLabel_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Діти:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekdaysLabel_9">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Будні:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToHorseRidingAdultSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>25</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToHorseRidingBenSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>2</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_45">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_42">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_43">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="springLabel_4">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>0</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Весна</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_44">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToHorseRidingChildWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_46">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToHorseRidingBenSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>2</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToHorseRidingAdultWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToHorseRidingChildWeekdaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>15</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_47">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToHorseRidingChildHolidaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>25</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToHorseRidingBenHolidaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>20</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekendLabel_13">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Вихідні:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="weekdaysLabel_13">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Будні:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToHorseRidingAdultHolidaysSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>30</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToHorseRidingAdultSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_45">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToHorseRidingBenWinterSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>1</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_46">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToHorseRidingChildAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>2</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="priceLabel_4">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>0</y>
+          <width>151</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ціна</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToHorseRidingAdultWeekendsSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>25</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_47">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>150</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToHorseRidingAdultSpringSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>4</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="winterLabel_4">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>0</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Зима</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToHorseRidingBenAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="epsToHorseRidingBenSummerSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>170</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="amountLabel_48">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>30</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>К-сть:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="epsLabel_48">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>90</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Похибка:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="autumnLabel_4">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>0</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Осінь</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="amountToHorseRidingAdultAutumnSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>50</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> чол</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>8</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="priceToHorseRidingChildWeekendsSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> грн</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+        <property name="value">
+         <number>20</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="summerLabel_4">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>0</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Літо</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="beneficiariesLabel_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>170</y>
+          <width>61</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Пільгові:</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QComboBox" name="dataEnterComboBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>171</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Вхід у музей</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Екскурсії</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Фотографування</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Катання на коні</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="saveEnteranceDataBtn">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>10</y>
+        <width>80</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header>QtCharts</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
